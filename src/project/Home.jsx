@@ -1,16 +1,11 @@
 import React from 'react'
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import MainPage from './components/MainPage'
 import CustomizedTheme from './components/CustomizedTheme'
+import VerticalTabs from './components/VerticalTab'
 
 export default function Home() {
   return (
-    <Router>
-      <Routes>
-        <CustomizedTheme>
-          <Route exact path="/" component={MainPage}/>
-        </CustomizedTheme>
-      </Routes>
-    </Router>
+    <CustomizedTheme>
+      <VerticalTabs />
+    </CustomizedTheme>
   )
 }
