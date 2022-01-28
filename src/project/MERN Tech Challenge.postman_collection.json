@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "1beb444f-720d-4674-9259-222e4b81df2f",
+		"name": "POS Mock Data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://619c95d468ebaa001753c95a.mockapi.io/api/v1/products",
+					"protocol": "https",
+					"host": [
+						"619c95d468ebaa001753c95a",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"createdAt\": \"2021-11-22T08:08:29.459Z\",\r\n    \"name\": \"Test 22\",\r\n    \"price\": \"11.00\",\r\n    \"category\": \"Kids\",\r\n    \"photo\": \"http://placeimg.com/640/480/food\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://619c95d468ebaa001753c95a.mockapi.io/api/v1/products",
+					"protocol": "https",
+					"host": [
+						"619c95d468ebaa001753c95a",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get active orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://619c95d468ebaa001753c95a.mockapi.io/api/v1/cart",
+					"protocol": "https",
+					"host": [
+						"619c95d468ebaa001753c95a",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"createdAt\": \"2021-11-22T17:26:02.006Z\",\r\n  \"products\": [{\r\n      \"id\": 5,\r\n      \"qty\": 1\r\n  },{\r\n      \"id\": 6,\r\n      \"qty\": 1\r\n  },{\r\n      \"id\": 8,\r\n      \"qty\": 1\r\n  }],\r\n  \"tableNo\": 82,\r\n  \"customerName\": \"customerName 1\",\r\n  \"notes\": \"notes 1\",\r\n  \"id\": \"1\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://619c95d468ebaa001753c95a.mockapi.io/api/v1/cart",
+					"protocol": "https",
+					"host": [
+						"619c95d468ebaa001753c95a",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
